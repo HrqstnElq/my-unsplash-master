@@ -1,6 +1,13 @@
-import Photo from "models/PhotoModel";
+import PhotoModel from "models/PhotoModel";
 
-export const addPhoto = (photo: Photo) => {
+export const setPhotos = (photos: PhotoModel[]) => {
+	return {
+		type: "SET_PHOTOS",
+		payload: photos,
+	};
+};
+
+export const addPhoto = (photo: PhotoModel) => {
 	return {
 		type: "ADD_PHOTO",
 		payload: photo,

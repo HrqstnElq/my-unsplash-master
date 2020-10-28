@@ -1,7 +1,7 @@
-import {changeMode, changeTag} from "actions/mode";
-import {removePhoto} from "actions/photo";
+import { changeMode, changeTag } from "actions/mode";
+import { removePhoto } from "actions/photo";
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import rootState from "states/rootState";
 import "./Button.scss";
 
@@ -18,7 +18,7 @@ export default function Button(props: {
 	data?: any;
 	setData?: any;
 }) {
-	const {contents, color, size, type, data, setData} = props;
+	const {contents, color, size, type, data} = props;
 
 	const classColor = `btn--${color}`;
 	const classSize = `btn--${size}`;
@@ -55,7 +55,6 @@ export default function Button(props: {
 					alert("error: enter password");
 					return;
 				}
-
 				const rmPhoto = removePhoto(data.id, data.password);
 				dispatch(rmPhoto);
 

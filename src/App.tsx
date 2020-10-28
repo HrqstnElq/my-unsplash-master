@@ -1,10 +1,11 @@
+import {setPhotos} from "actions/photo";
 import Form from "components/form";
 import Header from "components/header";
 import Photo from "components/photo";
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import useWindowDimensions from "services/getWindowDimensions";
-import {storage} from "services/localStore";
+import {useJsonServer} from "services/jsonServer";
 import rootState from "states/rootState";
 import "./App.scss";
 
@@ -13,20 +14,27 @@ import "./App.scss";
 function App() {
 	////!state and store
 	const photoList = useSelector((state: rootState) => state.photos.list);
-	storage(photoList, "photos");
-
+	// storage(photoList, "photos");
 	const search = useSelector((state: rootState) => state.search.str);
-
 	const modeShow = useSelector((state: rootState) => state.modeShow.mode);
+
+	const dispatch = useDispatch();
+	const res = useJsonServer();
+
+	useEffect(() => {
+		if (res !== "") {
+			const setPhotosAction = setPhotos(JSON.parse(res));
+			dispatch(setPhotosAction);
+		}
+	}, [res]);
 
 	// console.table(photoList);
 	const {columns} = useWindowDimensions();
 
-	////* dom
 	//div contain photos
 	var divList: any[] = [];
 
-	//clone photo from photoList global state
+	// clone photo from photoList global state
 	var arrPhoto = photoList.filter((photo) =>
 		photo.label.toLowerCase().includes(search.toLowerCase())
 	);
@@ -46,7 +54,6 @@ function App() {
 		divList = [...divList, div];
 	}
 
-	////*return
 	return (
 		<div className="app">
 			<div className="container">

@@ -8,6 +8,7 @@ import rootState from "states/rootState";
 import {changeMode} from "actions/mode";
 import "./Form.scss";
 import FormModel from "models/FormModel";
+import {postPhoto} from "services/jsonServer";
 const classNames = require("classnames");
 
 export default function Form(props: {type: string}) {
@@ -38,6 +39,8 @@ export default function Form(props: {type: string}) {
 			url: formData.url,
 			password: formData.password,
 		};
+		postPhoto(newPhoto);
+
 		const addPhotoAction = addPhoto(newPhoto);
 		dispatch(addPhotoAction);
 
