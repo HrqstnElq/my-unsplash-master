@@ -13,6 +13,7 @@
 	height: fit-content;
 
 	.photo__vignette {
+		pointer-events: none;
 		border: none;
 		display: none;
 
