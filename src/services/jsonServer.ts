@@ -2,7 +2,8 @@ import {useState} from "react";
 import axios from "axios";
 import PhotoModel from "models/PhotoModel";
 
-const url = "http://localhost:3001/photos/";
+// const url = "http://localhost:3001/photos/";
+const url = "https://my-unplash-server.herokuapp.com/photos";
 
 export const useJsonServer = () => {
 	const [photos, setPhotos] = useState<string>("");
