@@ -36,7 +36,7 @@ export default function Input(props: {
 				className="entry"
 				type={type}
 				placeholder={placeholder}
-				onBlur={handleMouseLeave}
+				onKeyUp={handleMouseLeave}
 				required
 			/>
 		</div>

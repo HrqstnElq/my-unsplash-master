@@ -42,12 +42,16 @@
 		left: 1rem;
 		z-index: 1;
 	}
+	span {
+		width: 100%;
+	}
 	.photo__content {
 		border: none;
 		border-radius: 15px;
 
 		width: 100%;
 		display: block;
+		object-fit: cover;
 	}
 	.photo--btn {
 		display: none;
