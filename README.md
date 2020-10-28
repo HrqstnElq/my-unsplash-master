@@ -1,15 +1,15 @@
-<h1 align="center">{My unplash master}</h1>
+<h1 align="center">My unplash maste</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 <div align="center">
   <h3>
-    <a href="https://huutri220820.github.io/my-unsplash-master/">
+    <a href="https://hrqstnelq.github.io/my-unsplash-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/huutri220820/my-unsplash-master">
+    <a href="https://github.com/HrqstnElq/my-unsplash-master">
       Solution
     </a>
     <span> | </span>
@@ -21,12 +21,12 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Built With](#built-with)
-- [Features](#features)
-- [How to use](#how-to-use)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+-   [Overview](#overview)
+    -   [Built With](#built-with)
+-   [Features](#features)
+-   [How to use](#how-to-use)
+-   [Contact](#contact)
+-   [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com
 
 ### Built With
 
-- [React](https://reactjs.org/)
+-   [React](https://reactjs.org/)
 
 ## Features
 
@@ -48,7 +48,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/huutri220820/my-unsplash-master.git
+$ git clone https://github.com/HrqstnElq/my-unsplash-master
 
 # Install dependencies
 $ npm install
@@ -59,14 +59,11 @@ $ npm start
 
 ## Acknowledgements
 
-
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+-   [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
+-   [Node.js](https://nodejs.org/)
+-   [ReactJs](https://reactjs.org/)
+-   [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
 
-- GitHub [@huutri220820](https://github.com/huutri220820)
-
-  
+-   GitHub [@shin](https://hrqstnelq.github.io/my-unsplash-master/)
