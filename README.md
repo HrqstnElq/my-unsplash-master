@@ -7,11 +7,11 @@
 </div>
 <div align="center">
   <h3>
-    <a href="https://hrqstnelq.github.io/my-unsplash-master/">
+    <a href="https://vtv24.github.io/my-unsplash-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/HrqstnElq/my-unsplash-master">
+    <a href="https://github.com/vtv24/my-unsplash-master">
       Solution
     </a>
     <span> | </span>
